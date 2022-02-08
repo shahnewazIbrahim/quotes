@@ -2,10 +2,10 @@
   <div class="hello">
     <div class="">
       <h1>
-        <u>
+        <u style="font-family: san-serif;">
           Quotes
         </u>
-        <sup style="font-size: 30px"><b>&ldquo;&rdquo;</b></sup>
+        <sup style="font-family: serif; font-style: italic; font-size: 30px"><b>&ldquo;&rdquo;</b></sup>
       </h1>
       <p style="font-size: 25px">
         <b>
@@ -34,7 +34,7 @@ export default {
   created() {
     axios.get('https://type.fit/api/quotes')
     .then((response) => {
-        const min = 1;
+        const min = 0;
         const max = Object.keys(response.data).length;
 
         setInterval(() => {
