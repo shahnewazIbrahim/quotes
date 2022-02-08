@@ -47,16 +47,3 @@ export default {
   },
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.hello {
-  /* background-color: rgb(219, 208, 208); */
-  /* position: fixed; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* width: 80%; */
-  /* padding: 76px; */
-}
-</style>
