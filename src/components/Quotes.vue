@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <div class="">
+  <div class=" bg-gray-300 grid place-items-center w-4/5 p-20 mx-auto my-auto">
+    <div>
       <h1>
         <u style="font-family: san-serif; font-size:30px">
           <b>Quotes</b>
@@ -52,12 +52,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hello {
-  background-color: rgb(219, 208, 208);
-  position: fixed;
-  top: 50%;
+  /* background-color: rgb(219, 208, 208); */
+  /* position: fixed; */
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  padding: 76px;
+  transform: translate(-50%, -50%); */
+  /* width: 80%; */
+  /* padding: 76px; */
 }
 </style>
