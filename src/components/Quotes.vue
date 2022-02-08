@@ -2,8 +2,8 @@
   <div class="hello">
     <div class="">
       <h1>
-        <u style="font-family: san-serif;">
-          Quotes
+        <u style="font-family: san-serif; font-size:30px">
+          <b>Quotes</b>
         </u>
         <sup style="font-family: serif; font-style: italic; font-size: 30px"><b>&ldquo;&rdquo;</b></sup>
       </h1>
