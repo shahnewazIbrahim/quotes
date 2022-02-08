@@ -55,7 +55,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 .hello {
   background-color: rgb(219, 208, 208);
   position: fixed;
@@ -64,19 +64,5 @@ export default {
   transform: translate(-50%, -50%);
   width: 80%;
   padding: 76px;
-}
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
