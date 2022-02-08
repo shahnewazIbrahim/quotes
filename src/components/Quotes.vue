@@ -46,11 +46,6 @@ export default {
       console.log(err)
     })
   },
-  methods: {
-      quotesFunc() {
-        
-      }
-  }
 }
 </script>
 
