@@ -1,15 +1,15 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HelloWorld/>
+    <Quotes/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Quotes from './components/Quotes.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Quotes
   },
   data() {
     return {
