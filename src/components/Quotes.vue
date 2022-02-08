@@ -1,13 +1,8 @@
 <template>
   <div class=" bg-gray-300 grid place-items-center w-4/5 p-20 mx-auto my-auto">
     <div>
-      <h1>
-        <u style="font-family: san-serif; font-size:30px">
-          <b>Quotes</b>
-        </u>
-        <sup style="font-family: serif; font-style: italic; font-size: 30px"><b>&ldquo;&rdquo;</b></sup>
-      </h1>
-      <p style="font-size: 25px">
+      <Header class="p-4" title="Quotes"/>
+      <p class="text-2xl">
         <b>
           {{ quotes.text }}
         </b>
@@ -23,8 +18,12 @@
 
 <script>
 import axios from 'axios';
+import Header from './Header.vue'
 export default {
   name: 'HelloWorld',
+  components: {
+    Header
+  },
   data() {
     return {
       quotes: '',
