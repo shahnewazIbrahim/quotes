@@ -1,5 +1,5 @@
 <template>
-  <div class=" bg-gray-300 grid place-items-center w-4/5 p-20 mx-auto my-auto">
+  <div class=" bg-gray-300 grid place-items-center w-4/5 p-20 mx-auto">
     <div>
       <Header class="p-4" title="Quotes"/>
       <p class="text-2xl">
