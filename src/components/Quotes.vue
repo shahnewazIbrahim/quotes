@@ -53,7 +53,6 @@ export default {
         }, 10000)
     },
     offApi() {
-      console.log(10);
       clearInterval(this.intervalFunc)
     }
   }
