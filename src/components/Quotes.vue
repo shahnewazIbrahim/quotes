@@ -1,6 +1,6 @@
 <template>
   <div class=" bg-gray-300 grid place-items-center w-4/5 p-20 mx-auto">
-    <div @mouseover="offApi" @mouseleave="apiCall(dataResponse)">
+    <div @mouseover="offApi" @mouseleave="apiCall(dataResponse)" class="cursor-pointer">
       <Header class="p-4" title="Quotes"/>
       <p class="text-2xl">
         <b>
