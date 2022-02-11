@@ -1,6 +1,6 @@
 <template>
   <div class=" bg-gray-300 grid place-items-center w-4/5 p-20 mx-auto">
-    <div>
+    <div @mouseover="offApi" @mouseleave="apiCall(dataResponse)">
       <Header class="p-4" title="Quotes"/>
       <p class="text-2xl">
         <b>
@@ -27,23 +27,35 @@ export default {
   data() {
     return {
       quotes: '',
-      author: ''
+      author: '',
+      intervalFunc: undefined,
+      dataResponse : ''
     }
   },
   created() {
     axios.get('https://type.fit/api/quotes')
     .then((response) => {
-        const min = 0;
-        const max = Object.keys(response.data).length;
-
-        setInterval(() => {
-          const index = Math.floor(Math.random() * (max - min)) + min; 
-          this.quotes = response.data[index]
-        }, 10000)
+      this.dataResponse = response
+        this.apiCall(response)
     })
     .catch((err)=> {
       console.log(err)
     })
   },
+  methods : {
+    apiCall(response) {
+      const min = 0;
+        const max = Object.keys(response.data).length;
+
+       this.intervalFunc =  setInterval(() => {
+          const index = Math.floor(Math.random() * (max - min)) + min; 
+          this.quotes = response.data[index]
+        }, 10000)
+    },
+    offApi() {
+      console.log(10);
+      clearInterval(this.intervalFunc)
+    }
+  }
 }
 </script>
