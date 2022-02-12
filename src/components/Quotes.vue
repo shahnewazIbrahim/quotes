@@ -45,12 +45,12 @@ export default {
   methods : {
     apiCall(response) {
       const min = 0;
-        const max = Object.keys(response.data).length;
+      const max = Object.keys(response.data).length;
 
-       this.intervalFunc =  setInterval(() => {
-          const index = Math.floor(Math.random() * (max - min)) + min; 
-          this.quotes = response.data[index]
-        }, 10000)
+      this.intervalFunc =  setInterval(() => {
+        const index = Math.floor(Math.random() * (max - min)) + min; 
+        this.quotes = response.data[index]
+      }, 10000)
     },
     offApi() {
       clearInterval(this.intervalFunc)
