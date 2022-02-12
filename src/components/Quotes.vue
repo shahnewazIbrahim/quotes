@@ -7,7 +7,7 @@
           {{ quotes.text }}
         </b>
       </p>
-      <p style="font-size: 18px">
+      <p class="text-lg">
         <b>
           {{ quotes.author? `-- ${quotes.author}` : '' }}
         </b>
