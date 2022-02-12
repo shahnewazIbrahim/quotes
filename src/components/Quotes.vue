@@ -1,5 +1,5 @@
 <template>
-  <div class=" bg-gray-300 grid place-items-center w-4/5 p-20 mx-auto  h-80">
+  <div class="grid place-items-center w-4/5 p-20 mx-auto  h-80">
     <div @mouseover="offApi" @mouseleave="apiCall(dataResponse)" class="overflow-hidden cursor-pointer">
       <Header class="p-4" title="Quotes"/>
       <p class="text-2xl">

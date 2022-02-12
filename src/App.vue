@@ -1,6 +1,6 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <Quotes/>
+    <Quotes class="bg-gray-300"/>
 </template>
 
 <script>
