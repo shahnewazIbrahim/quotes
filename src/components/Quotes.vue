@@ -7,8 +7,8 @@
     >
       <Header class="p-4" title="Quotes" />
       <p class="text-2xl">
-        <b>
-          {{ quotes.text }}
+        <b class="italic">
+          &ldquo; {{ quotes.text }}&rdquo;
           <!-- {{ quotes }} -->
         </b>
       </p>
